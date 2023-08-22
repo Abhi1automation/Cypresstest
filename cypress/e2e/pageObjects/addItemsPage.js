@@ -84,6 +84,37 @@ class addItemsPage {
 
     }
 
+    validateNoItemsadded(item){
+
+        switch(item){
+
+            case "saucelabsBackpack":
+                this.elements.saucelabsBackpack().should('not.exist');
+                break;
+    
+            case "saucelabsBikeLight":
+                this.elements.saucelabsBikeLight().should('not.exist');
+                break;
+    
+            case "saucelabsBoltTshirt":
+                this.elements.saucelabsBoltTshirt().should('not.exist');
+                break;
+    
+            case "saucelabsFleeceJacket":
+                this.elements.saucelabsFleeceJacket().should('not.exist');
+                break;
+    
+            case "saucelabsOnesie":
+                this.elements.saucelabsOnesie().should('not.exist');
+                break;
+    
+            case "saucelabsTshirtRed":
+                this.elements.saucelabsTshirtRed().should('not.exist');
+                break;
+    
+            }
+    }
+
 
 
 }

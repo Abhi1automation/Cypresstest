@@ -4,7 +4,9 @@ class LoginPage {
         usrNameInpt : ()=>cy.get('#user-name'),
         passwordInpt: ()=>cy.get('#password'),
         loginBtn: ()=>cy.get('#login-button'),
-        pageHeader: ()=>cy.get('.app_logo')
+        pageHeader: ()=>cy.get('.app_logo'),
+        logoutMenu: ()=>cy.get('#react-burger-menu-btn'),
+        logoutBtn: ()=> cy.get('#logout_sidebar_link')
     }
 
     setUserName(username) {
@@ -21,6 +23,11 @@ class LoginPage {
 
     verifySuccessfulLogin(title) {
         this.elements.pageHeader().should('have.text','Swag Labs');
+    };
+
+    clickLogout() {
+        this.elements.logoutMenu().click();
+        this.elements.logoutBtn().click();
     };
 
 }

@@ -6,7 +6,7 @@ class checkoutPage {
         lastNameInpt: ()=>cy.get('#last-name'),
         zipCodeInpt: ()=>cy.get('#postal-code'),
         continueBtn: ()=> cy.get('#continue'),
-        finishBtn: ()=>cy.get('finish'),
+        finishBtn: ()=>cy.get('#finish'),
         successMsg: ()=>cy.get('.complete-header')
 
     }

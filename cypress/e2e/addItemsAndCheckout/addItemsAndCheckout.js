@@ -85,3 +85,16 @@ Then("I validate that the order is placed successfully", ()=>{
 
 })
 
+Then("I click Logout", ()=>{
+
+    loginPage.clickLogout();
+
+})
+
+
+Then("I should not see {string} added", (item)=>{
+
+    addItems.validateNoItemsadded(item)
+
+})
+
